@@ -1,12 +1,3 @@
-"""
-
-Developed By : sumit kumar
-facebook : fb.com/sumit.luv
-Youtube :youtube.com/lazycoders
-
-
-"""
-
 
 
 
@@ -16,7 +7,7 @@ from hospital import views
 from django.contrib.auth.views import LoginView,LogoutView
 
 
-#-------------FOR ADMIN RELATED URLS
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home_view,name=''),
@@ -94,9 +85,6 @@ urlpatterns +=[
 ]
 
 
-
-
-#---------FOR PATIENT RELATED URLS-------------------------------------
 urlpatterns +=[
 
     path('patient-dashboard', views.patient_dashboard_view,name='patient-dashboard'),
@@ -109,6 +97,4 @@ urlpatterns +=[
 
 ]
 
-#Developed By : sumit kumar
-#facebook : fb.com/sumit.luv
-#Youtube :youtube.com/lazycoders
+
