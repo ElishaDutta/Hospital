@@ -16,7 +16,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
 STATIC_DIR=os.path.join(BASE_DIR,'static')
-
+MEDIA_URL = '/media/'
 
 SECRET_KEY = 'hpbv()ep00boce&o0w7z1h)st148(*m@6@-rk$nn)(n9ojj4c0'
 
@@ -110,7 +110,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS=[STATIC_DIR,]
 
-MEDIA_ROOT=os.path.join(BASE_DIR,'static')
+MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
 
 
